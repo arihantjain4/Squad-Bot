@@ -31,7 +31,7 @@ bot.on('ready', () => {
 
 
 var con = mysql.createConnection({
-    host: "tcp://4.tcp.ngrok.io:18416",
+    host: "https://4f62410d471c.ngrok.io",
     user: "root",
     password: config.mysqlpass,
     database: "reminders"
