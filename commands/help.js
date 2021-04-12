@@ -16,7 +16,6 @@ module.exports = {
 	execute(message, args, mentionedRole, client, con) {
         let maker = client.users.cache.get('688569145431687178');
         helpEmbed.setFooter(`Created by: ${maker.tag}`, 'https://i.ibb.co/2cmRsPG/da3379157492e6397756f81352fd55a2.webp');
-        helpEmbed.se
         return message.channel.send(helpEmbed);
     }
 }
