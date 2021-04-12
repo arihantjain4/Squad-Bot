@@ -10,8 +10,8 @@ helpEmbed.addField('~time', "With the time command, users can get the current ti
 helpEmbed.addField(`~measurements`, "A command for finding and converting common mathematical measurements.");
 module.exports = {
 	name: 'help',
-    description: 'Starts exam time for students with mentioned role.',
-    args: false,
+    	description: 'Starts exam time for students with mentioned role.',
+    	args: false,
 	optional: false,
 	execute(message, args, mentionedRole, client, con) {
         let maker = client.users.cache.get('688569145431687178');
