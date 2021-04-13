@@ -23,7 +23,7 @@ for (const file of commandFiles) {
 }
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
-    bot.user.setActivity('~help || DM me to report bugs or give feedback!', {type: 'CUSTOM_STATUS'});
+    bot.user.setActivity('~help || DM me to report bugs or give feedback!', {type: 'PLAYING'}).catch(console.error);
     bot.generateInvite({
         permissions: ["ADMINISTRATOR"],
     }).then(console.log);
