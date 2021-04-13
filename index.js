@@ -1,4 +1,4 @@
-//const keepAlive = require('./server');
+const keepAlive = require('./server');
 const fs = require('fs');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
@@ -31,10 +31,10 @@ bot.on('ready', () => {
 
 
 var con = mysql.createConnection({
-    host: "https://4f62410d471c.ngrok.io",
-    user: "root",
+    host: "freedb.tech",
+    user: "freedbtech_ajcocelec",
     password: config.mysqlpass,
-    database: "reminders"
+    database: "freedbtech_reminders"
 });
 con.connect(err => {
     if(err){
@@ -111,5 +111,5 @@ bot.on('message', message => {
         message.reply('there was an error trying to execute that command!');
     }
 });
-//keepAlive();
+keepAlive();
 bot.login(config.token);
