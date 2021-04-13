@@ -1,4 +1,4 @@
-const keepAlive = require('./server');
+//const keepAlive = require('./server');
 const fs = require('fs');
 const Discord = require('discord.js');
 const bot = new Discord.Client();
@@ -111,5 +111,5 @@ bot.on('message', message => {
         message.reply('there was an error trying to execute that command!');
     }
 });
-keepAlive();
+//keepAlive();
 bot.login(config.token);
