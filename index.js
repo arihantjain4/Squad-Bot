@@ -21,14 +21,13 @@ for (const file of commandFiles) {
 	// with the key as the command name and the value as the exported module
 	bot.commands.set(command.name, command);
 }
-bot.user.setActivity('~help || DM me to report bugs or give feedback!', {type: 'CUSTOM_STATUS'});
 bot.on('ready', () => {
     console.log(`Logged in as ${bot.user.tag}!`);
     bot.generateInvite({
         permissions: ["ADMINISTRATOR"],
     }).then(console.log);
 });
-
+bot.user.setActivity('~help || DM me to report bugs or give feedback!', {type: 'CUSTOM_STATUS'});
 
 var con = mysql.createConnection({
     host: "freedb.tech",
