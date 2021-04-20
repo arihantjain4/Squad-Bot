@@ -8,6 +8,7 @@ helpEmbed.addField('~reminder', 'The reminder command is a simple calender-like 
 helpEmbed.addField('~exam and ~examend', 'The exam system is for muting users with a specific role during an exam, except if the message is important.');
 helpEmbed.addField('~time', "With the time command, users can get the current time of any supported timezone, and set their own server's timezone.");
 helpEmbed.addField(`~measurements`, "A command for finding and converting common mathematical measurements.");
+helpEmbed.addField(`~translate`, "A command for translating text to another language.");
 module.exports = {
 	name: 'help',
     	description: 'Starts exam time for students with mentioned role.',
